@@ -12,7 +12,7 @@
         body {
             margin: 0;
             overflow: hidden;
-            background: #000;
+            background: #e3f9fd;
         }
 
         canvas {
@@ -22,10 +22,10 @@
         }
 
         #pinkboard {
-            animation: anim 2.1s ease-in-out infinite;
-            -webkit-animation: anim 2.1s ease-in-out infinite;
-            -o-animation: anim 2.1s ease-in-out infinite;
-            -moz-animation: anim 2.1s ease-in-out infinite;
+            animation: anim 1.8s ease-in-out infinite;
+            -webkit-animation: anim 1.8s ease-in-out infinite;
+            -o-animation: anim 1.8s ease-in-out infinite;
+            -moz-animation: anim 1.8s ease-in-out infinite;
         }
         
         @keyframes anim {
@@ -203,7 +203,7 @@
         Heart.prototype.draw = function (i) {
             ctx.globalAlpha = this.opacity;
             ctx.font = `${180 * this.scale}px "华文楷体"`;
-            // ctx.font="21px";
+            // ctx.font="25px";
             ctx.fillStyle = colors[i % 18];
             ctx.fillText(
                 "爱你玖宝",
