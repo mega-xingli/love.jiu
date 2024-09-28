@@ -202,13 +202,13 @@
         };
         Heart.prototype.draw = function (i) {
             ctx.globalAlpha = this.opacity;
-            ctx.font = `${180 * this.scale}px "华文楷体"`;
+            ctx.font = `${300 * this.scale}px "华文楷体"`;
             // ctx.font="36px";
             ctx.fillStyle = colors[i % 18];
             ctx.fillText(
                 "爱你玖宝",
-                this.x - this.width * 0.1,
-                this.y - this.height * 0.1,
+                this.x - this.width * 0.5,
+                this.y - this.height * 0.5,
                 this.width,
                 this.height
             );
